@@ -20,5 +20,11 @@ function changeColor() {
     let color = bgColorsArray[num];
     let divElement = document.getElementById('bgContainer');
     divElement.style.backgroundColor = color;
+    let p = document.getElementById('para');
+    p.textContent = color;
+    p.style.color = 'white';
+    p.style.fontSize = '40px';
+    p.style.fontWeight = '700'
+    p.style.textAlign = 'center'
     console.log(color);
 }
